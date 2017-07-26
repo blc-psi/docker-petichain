@@ -1,0 +1,9 @@
+prefix: false
+services:
+  petichain:
+    image: "dfherr/petichain:latest"
+    tty: true
+    interactive: true
+    detach: true
+    rm: true
+    publish: ["8080:8080", "8180:8180", "8545:8545"]
